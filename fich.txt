@@ -1,0 +1,9 @@
+﻿Manuel Hernández,Hisotia del XXI,12.0,4#
+Jacinta Flores,Hisotia del arte,17.0,13#
+Anabel Hayato,Álgebra,21.0,11#
+Manuel Hernández,Hisotia del XXI,12.0,4#
+Jacinta Flores,Hisotia del arte,17.0,13#
+Anabel Hayato,Álgebra,21.0,11#
+Manuel Hernández,Hisotia del XXI,12.0,4#
+Jacinta Flores,Hisotia del arte,17.0,13#
+Anabel Hayato,Álgebra,21.0,11#
