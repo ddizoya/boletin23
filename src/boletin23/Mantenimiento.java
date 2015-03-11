@@ -26,9 +26,10 @@ public class Mantenimiento {
     Scanner sc;
     ObjectOutputStream oos;
     PrintWriter pw;
-
+    
     public void anadir(String nombrefichero, FicheroLibreria obj) {
         try {
+            oos = new ObjectOutputStream(new FileOutputStream (nombrefichero));
             pw = new PrintWriter(new FileWriter(nombrefichero, true));
             pw.println(obj.getAutor() + "," + obj.getNombreLibro() + "," + obj.getPrecio() + "," + obj.getUnidades() + "#");
         } catch (IOException e) {
@@ -41,20 +42,11 @@ public class Mantenimiento {
     public void consultar(String nombrefichero) {
         try {
             sc = new Scanner(new File(nombrefichero));
-
-            String resp = JOptionPane.showInputDialog(null, "Indique al menos criterio por lo que quiere empezar a buscar el libro:"
-                    + " Autor, "
-                    + "Título, "
-                    + "Precio "
-                    + "o "
-                    + "Unidad.").toLowerCase();
-            String resp2;
-
-            switch (resp) {
-                case "autor":
-                    resp2 = JOptionPane.showInputDialog("Introduce el nombre del autor: ").toLowerCase();
-                    JOptionPane.showMessageDialog(null, sc.findInLine(resp2)); //Continuar.
-            }
+            
+            
+            String resp = JOptionPane.showInputDialog("Introduce el nombre del autor: ").toLowerCase();
+            JOptionPane.showMessageDialog(null, sc.findInLine(resp2)); //Continuar.
+            
            
         } catch (Exception ex) {
             System.err.println(ex.toString());
